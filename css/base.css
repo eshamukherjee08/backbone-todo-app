@@ -23,7 +23,7 @@ button {
 body {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
-	background: #eaeaea url('bg.png');
+	background: #eaeaea url('../images/bg.png');
 	color: #4d4d4d;
 	width: 550px;
 	margin: 0 auto;
@@ -163,7 +163,7 @@ label[for='toggle-all'] {
 }
 
 #toggle-all:before {
-	content: 'Â»';
+	content: '»';
 	font-size: 28px;
 	color: #d9d9d9;
 	padding: 0 25px 7px;
