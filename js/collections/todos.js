@@ -7,13 +7,14 @@ var TodoList = Backbone.Collection.extend({
 
 
 	//save all of the todo items under the "todos-backbone" namespace
-	localStorage: new Backbone.localStorage('todos-backbone'),
+	
+	localStorage: new Backbone.LocalStorage("todos-backbone"),
 
 	// Filter down the list of all todo items that are finished
 	completed: function(){
 		return this.filter(function(todo){
 			return todo.get('completed');
-		})
+		});
 	},
 
 
@@ -34,7 +35,7 @@ var TodoList = Backbone.Collection.extend({
 	},
 
 	//Todos are sorted by original insertion order.
-	comparator: function(){
+	comparator: function(todo){
 		return todo.get('order');
 	}
 });
